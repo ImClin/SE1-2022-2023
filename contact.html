@@ -1,56 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="/scripts/scripts.js"></script>
-    <link rel="icon" href="img/Logo.png" type="image/png" sizes="16x16">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="/scripts/scripts.js"></script>
+  <link rel="icon" href="img/Logo.png" type="image/png" sizes="16x16">
 </head>
 
 <body>
 
   <nav>
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="visie.html">Opleiding & Visie</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="gallerij.html">Gallerij</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="visie.html">Opleiding & Visie</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="gallerij.html">Gallerij</a></li>
     </ul>
-</nav>
+  </nav>
 
-    <form action="mail.php" method="post">
-        <div class="form">
-          <h2 style="color:white;">
-            <a style="color:#2196F3;" font-size="22px">Contact </a>formulier
-          </h2>
-  
-          <input
-            type="text"
-            name="name"
-            placeholder="Voor & Achternaam"
-            style="width:200px; height:25px;"
-            required
-          /><br /><br />
-          <input type="text" name="email" placeholder="Email adres" style="width:200px; height:25px;" required />
-          <br /><br />
-  
-          <div class=""></div>
-          <input type="radio" name="test1" checked><a style="color:white;">Feedback</a><br>
-          <input type="radio" name="test1"><a style="color:white;">Vraag</a>
-  <br><br>
-          <textarea type="text"
-          name="problem"
-          placeholder="Beschrijf hier het probleem"
-          style="width: 300px; height: 200px;"
-          autocomplete="off"
-          required></textarea>
-  
-          <br /><br />
-          <button type="submit" id="submit" name="submit">Verzend informatie</button>
-        </div>
-      </form>
+  <form action="mail.php" method="post">
+    <div class="form">
+      <h2 style="color:white;">
+        <a style="color:#2196F3;" font-size="22px">Contact </a>formulier
+      </h2>
+
+      <input type="text" name="name" placeholder="Voor & Achternaam" style="width:200px; height:25px;"
+        required /><br /><br />
+      <input type="text" name="email" placeholder="Email adres" style="width:200px; height:25px;" required />
+      <br /><br />
+
+      <div class=""></div>
+      <input type="radio" name="test1" checked><a style="color:white;">Feedback</a><br>
+      <input type="radio" name="test1"><a style="color:white;">Vraag</a>
+      <br><br>
+      <textarea type="text" name="problem" placeholder="Beschrijf hier het probleem"
+        style="width: 300px; height: 200px;" autocomplete="off" required></textarea>
+
+      <br /><br />
+      <button type="submit" id="submit" name="submit">Verzend informatie</button>
+    </div>
+  </form>
 </body>
+
 </html>
