@@ -1,0 +1,25 @@
+img.gallerij-foto {
+  width: 20%;
+  margin: 10px;
+  border: #0066a2 2px solid;
+  border-radius: 5px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 1);
+  transition: all 0.3s ease-out;
+}
+
+img.gallerij-foto:hover {
+  box-shadow: 0px 2px 10px #0066a2;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

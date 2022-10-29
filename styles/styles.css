@@ -133,42 +133,14 @@ div.form {
   margin: 50px;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;300;400;500;600;700&display=swap");
-
-.gallerij img {
-  height: 92px;
-  margin: 10px 0;
-  cursor: pointer;
-  display: block;
-  opacity: 0.5;
-}
-
-.gallerij img:hover {
-  opacity: 1;
-}
-
-.gallerij {
-  float: left;
-}
-
-.foto-gallerij {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-}
-
-.image-container img {
-  height: 400px;
-  transition: transform 1s;
-}
-
-.image-container img:hover {
-  transform: scale(1.5);
-  cursor: zoom-in;
-}
-
-.image-container {
-  float: right;
-  padding: 10px;
+.button {
+  background-color: #2196f3;
+  color: white;
+  border-style: outset;
+  border-color: #0066a2;
+  height: 40px;
+  width: 200px;
+  font: bold15px arial, sans-serif;
+  text-shadow: none;
+  margin: 10px;
 }
