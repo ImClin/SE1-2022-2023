@@ -1,48 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="/scripts/scripts.js"></script>
+    <link rel="icon" href="img/Logo.png" type="image/png" sizes="16x16" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <script src="/scripts/scripts.js"></script>
-  <link rel="icon" href="img/Logo.png" type="image/png" sizes="16x16">
-</head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"
+            ><img src="img/home.png" style="width: 4%;" /> Home</a
+          >
+        </li>
+        <li>
+          <a href="visie.html"
+            ><img src="img/visie.png" style="width: 4%;" /> Opleiding & Visie</a
+          >
+        </li>
+        <li>
+          <a href="contact.html"
+            ><img src="img/envelope.png" style="width:4%;" /> Contact</a
+          >
+        </li>
+        <li>
+          <a href="gallerij.html"
+            ><img src="img/camera.png" style="width:4%;" /> Gallerij</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <form action="mail.php" method="post">
+      <div class="form">
+        <h2 style="color:white;">
+          <a style="color:#2196F3;" font-size="22px">Contact </a>formulier
+        </h2>
 
-<body>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Voor & Achternaam"
+          style="width:200px; height:25px;"
+          required
+        /><br /><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email adres"
+          style="width:200px; height:25px;"
+          required
+        />
+        <br /><br />
 
-  <nav>
-    <ul>
-      <li><a href="index.html"><img src="img/home.png" style="width: 4%;"> Home</a></li>
-      <li><a href="visie.html"><img src="img/visie.png" style="width: 4%;"> Opleiding & Visie</a></li>
-      <li><a href="contact.html"><img src="img/envelope.png" style="width:4%;"> Contact</a></li>
-      <li><a href="gallerij.html"><img src="img/camera.png" style="width:4%;"> Gallerij</a></li>
-    </ul>
-  </nav>
-  <form action="mail.php" method="post">
-    <div class="form">
-      <h2 style="color:white;">
-        <a style="color:#2196F3;" font-size="22px">Contact </a>formulier
-      </h2>
+        <div class=""></div>
+        <input type="radio" name="probleem" id="problem" checked /><a
+          style="color:white;"
+          >Feedback</a
+        ><br />
+        <input type="radio" name="probleem" id="problem" /><a
+          style="color:white;"
+          >Vraag</a
+        >
+        <br /><br />
+        <textarea
+          type="text"
+          name="message"
+          id="message"
+          placeholder="Beschrijf hier het probleem"
+          style="width: 300px; height: 200px;"
+          autocomplete="off"
+          required
+        ></textarea>
 
-      <input type="text" name="name" id="name" placeholder="Voor & Achternaam" style="width:200px; height:25px;"
-        required /><br /><br />
-      <input type="email" name="email" id="email" placeholder="Email adres" style="width:200px; height:25px;" required />
-      <br /><br />
-
-      <div class=""></div>
-      <input type="radio" name="probleem" id="problem"checked><a style="color:white;">Feedback</a><br>
-      <input type="radio" name="probleem" id="problem"><a style="color:white;">Vraag</a>
-      <br><br>
-      <textarea type="text" name="message" id="message" placeholder="Beschrijf hier het probleem"
-        style="width: 300px; height: 200px;" autocomplete="off" required></textarea>
-
-      <br /><br />
-      <button type="submit" id="submit" name="submit">Verzend informatie</button>
-    </div>
-  </form>
-</body>
-
+        <br /><br />
+        <button type="submit" id="submit" name="submit">
+          Verzend informatie
+        </button>
+      </div>
+    </form>
+  </body>
 </html>
