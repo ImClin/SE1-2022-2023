@@ -121,15 +121,6 @@ div.form {
   }
 }
 
-.thom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: white;
-  font-size: 0.6em;
-  animation: float-in 1s ease-in-out;
-}
-
 .visie-outline {
   animation: float-in 1s ease-in-out;
   margin: 50px;
