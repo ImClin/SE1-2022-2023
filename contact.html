@@ -1,65 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="/scripts/scripts.js"></script>
+    <link rel="icon" href="img/Logo.png" type="image/png" sizes="16x16" />
+    <style rel="stylesheet" media="all">
+      input, textarea {
+        border:none;
+        border-radius: 7px;
+        border:1px solid #052F5F;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <script src="/scripts/scripts.js"></script>
-  <link rel="icon" href="img/Logo.png" type="image/png" sizes="16x16">
-  <style rel="stylesheet" media="all">
-    input, textarea {
-      border:none;
-      border-radius: 7px;
-      border:1px solid #052F5F;
-    }
+      textarea{
+        resize: none;
+        width: 300px; height: 200px;
+      }
 
-    textarea{
-      resize: none;
-      width: 300px; height: 200px;
-    }
+      input[text]{
+        width:200px;
+        height:25px;
+      }
+    </style>
+  </head>
 
-    input[text]{
-      width:200px;
-      height:25px;
-    }
-  </style>
-</head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="main-color-nav">Home</a></li>
+        <li>
+          <a href="visie.html" class="main-color-nav">Opleiding & Visie</a>
+        </li>
+        <li><a href="contact.html" class="main-color-nav">Contact</a></li>
+        <li><a href="gallerij.html" class="main-color-nav">Gallerij</a></li>
+      </ul>
+    </nav>
+    <form action="mail.php" method="post">
+      <div class="form">
+        <h2>
+          <a class="main-color-contact">Contact Formulier</a>
+        </h2>
 
-<body>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Voor & Achternaam"
+          required
+        /><br /><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email adres"
+          required
+        />
+        <br /><br />
 
-  <nav>
-    <ul>
-        <li><a href="index.html" class="bg-color"><img src="img/home.png" class="nav-img"> Home</a></li>
-        <li><a href="visie.html" class="bg-color"><img src="img/visie.png" class="nav-img"> Opleiding & Visie</a></li>
-        <li><a href="contact.html" class="bg-color"><img src="img/envelope.png" class="nav-img"> Contact</a></li>
-        <li><a href="gallerij.html" class="bg-color"><img src="img/camera.png" class="nav-img"> Gallerij</a></li>
-    </ul>
-</nav>
-  <form action="mail.php" method="post">
-    <div class="form">
-      <h2>
-        <a class="main-color-contact">Contact Formulier</a>
-      </h2>
+        <div class=""></div>
+        <input type="radio" name="problem" id="problem" checked /><a
+          class="main-color"
+          >Feedback</a
+        ><br />
+        <input type="radio" name="problem" id="problem" /><a class="main-color"
+          >Vraag</a
+        >
+        <br /><br />
+        <textarea
+          type="text"
+          name="message"
+          id="message"
+          placeholder="Beschrijf hier het probleem"
+          autocomplete="off"
+          required
+          maxlength="504"
+        ></textarea>
 
-      <input type="text" name="name" id="name" placeholder="Voor & Achternaam"
-        required /><br /><br />
-      <input type="email" name="email" id="email" placeholder="Email adres" required />
-      <br /><br />
-
-      <div class=""></div>
-      <input type="radio" name="problem" id="problem"checked><a class=main-color>Feedback</a><br>
-      <input type="radio" name="problem" id="problem"><a class="main-color">Vraag</a>
-      <br><br>
-      <textarea type="text" name="message" id="message" placeholder="Beschrijf hier het probleem"
-         autocomplete="off" required maxlength="504" ></textarea>
-
-      <br /><br />
-      <button type="submit" id="submit" name="submit">Verzend informatie</button>
-    </div>
-  </form>
-</body>
-
+        <br /><br />
+        <button type="submit" id="submit" name="submit">
+          Verzend informatie
+        </button>
+      </div>
+    </form>
+  </body>
 </html>

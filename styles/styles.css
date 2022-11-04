@@ -6,7 +6,7 @@ body {
   background-color: #f7fff7;
 }
 
-.bg-color {
+.main-color-nav {
   color: #f7fff7;
 }
 
@@ -14,13 +14,13 @@ body {
   color: rgb(0, 0, 0);
 }
 
-.main-color-contact{
-  font-size:22px;
-  color:#052F5F
+.main-color-contact {
+  font-size: 22px;
+  color: #052F5F;
 }
 
-.nav-img{
-  width:4%;
+.nav-img {
+  width: 4%;
 }
 
 .main-color {
